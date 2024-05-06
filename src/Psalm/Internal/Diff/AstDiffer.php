@@ -16,7 +16,7 @@ use function count;
  *
  * Implements the Myers diff algorithm.
  *
- * Myers, Eugene W. "An O (ND) difference algorithm and its variations."
+ * Myers, Eugene W. "An O (AND) difference algorithm and its variations."
  * Algorithmica 1.1 (1986): 251-266.
  *
  * @internal

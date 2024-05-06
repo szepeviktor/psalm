@@ -1355,7 +1355,7 @@ class TemporaryUpdateTest extends TestCase
                                 private static $s = null;
 
                                 public function foo() : void {
-                                    new SomeClas();
+                                    new SomeClass();
                                 }
 
                                 public function bar() : void {
@@ -1372,7 +1372,7 @@ class TemporaryUpdateTest extends TestCase
                                 private static $s = null;
 
                                 public function foo() : void {
-                                    new SomeClas();
+                                    new SomeClass();
                                 }
 
                                 public function bar() : void {

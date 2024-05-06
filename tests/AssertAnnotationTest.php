@@ -90,7 +90,7 @@ class AssertAnnotationTest extends TestCase
         $this->analyzeFile('somefile.php', new Context());
     }
 
-    public function testAssertsAllongCallStaticMethodWork(): void
+    public function testAssertsAlongCallStaticMethodWork(): void
     {
         $this->addFile(
             'somefile.php',
@@ -150,7 +150,7 @@ class AssertAnnotationTest extends TestCase
     public function providerValidCodeParse(): iterable
     {
         return [
-            'implictAssertInstanceOfB' => [
+            'implicitAssertInstanceOfB' => [
                 'code' => '<?php
                     namespace Bar;
 
@@ -249,7 +249,7 @@ class AssertAnnotationTest extends TestCase
                         return $s;
                     }',
             ],
-            'implictAssertInstanceOfInterface' => [
+            'implicitAssertInstanceOfInterface' => [
                 'code' => '<?php
                     namespace Bar;
 
@@ -1357,7 +1357,7 @@ class AssertAnnotationTest extends TestCase
                      * @psalm-assert-if-true string $a
                      * @psalm-assert-if-true string $b
                      */
-                    function assertAandBAreStrings($a, $b): bool {
+                    function assertAndBAreStrings($a, $b): bool {
                         if (!is_string($a)) { return false;}
                         if (!is_string($b)) { return false;}
 
@@ -1369,7 +1369,7 @@ class AssertAnnotationTest extends TestCase
                      * @param mixed $b
                      */
                     function test($a, $b): string {
-                        if (!assertAandBAreStrings($a, $b)) {
+                        if (!assertAndBAreStrings($a, $b)) {
                             throw new \Exception();
                         }
 
