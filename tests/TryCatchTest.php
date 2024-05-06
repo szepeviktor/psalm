@@ -64,7 +64,7 @@ class TryCatchTest extends TestCase
                         return "hello";
                     }',
             ],
-            'whereasTheCatch' => [
+            'wheresTheCatch' => [
                 'code' => '<?php
                     function foo() : bool {
                         try {

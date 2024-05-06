@@ -1357,7 +1357,7 @@ class AssertAnnotationTest extends TestCase
                      * @psalm-assert-if-true string $a
                      * @psalm-assert-if-true string $b
                      */
-                    function assertAndBAreStrings($a, $b): bool {
+                    function assertAandBAreStrings($a, $b): bool {
                         if (!is_string($a)) { return false;}
                         if (!is_string($b)) { return false;}
 
@@ -1369,7 +1369,7 @@ class AssertAnnotationTest extends TestCase
                      * @param mixed $b
                      */
                     function test($a, $b): string {
-                        if (!assertAndBAreStrings($a, $b)) {
+                        if (!assertAandBAreStrings($a, $b)) {
                             throw new \Exception();
                         }
 
