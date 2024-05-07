@@ -11786,7 +11786,7 @@ return [
     'implode\'1' => ['string', 'separator'=>'array'],
     'import_request_variables' => ['bool', 'types'=>'string', 'prefix='=>'string'],
     'in_array' => ['bool', 'needle'=>'mixed', 'haystack'=>'array', 'strict='=>'bool'],
-    'included_get_data' => ['array'],
+    'inclued_get_data' => ['array'],
     'inet_ntop' => ['string|false', 'ip'=>'string'],
     'inet_pton' => ['string|false', 'ip'=>'string'],
     'inflate_add' => ['string|false', 'context'=>'resource', 'data'=>'string', 'flush_mode='=>'int'],
